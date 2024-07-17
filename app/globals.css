@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+.home-campaign-glowing-icon-glow-1 {
+  background-color: #7ee787;
+  filter: blur(20px);
+}
+
+
+
+.home-campaign-glowing-icon-glow-2 {
+  background-color: #f778ba;
+  filter: blur(20px);
+}
+
+.skills{
+  backdrop-filter: blur(30px);
+}
+
+.blurry{
+  backdrop-filter: blur(8px);
+}
+
+.strock{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  text-transform: uppercase;
+}
+
+.try{
+  background: linear-gradient(
+    to bottom right , red , yellow
+  );
+}
+
+label{
+  font-weight: 600;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
